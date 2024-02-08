@@ -10,9 +10,9 @@
     <h1 id="second"></h1>
     <div id="test">
         <div class="container">
-            <img src="https://raw.githubusercontent.com/kgoediappearence/will-you-be-my-valentine/main/giphy.webp" class="valentine-gif">
+            <img src="../Documents/giphy.webp" class="valentine-gif">
             <div class="button-container">
-                <button id="yesBtn"><a href="../Desktop/valentine_page.html">Yes</a></button>
+                <button id="yesBtn"onclick="kgoedi()"><a href="../Desktop/valentine_page.html">Yes</a></button>
                 <button id="noBtn" onclick="Appearance()">No</button></a>
             </div>
         </div>
@@ -30,9 +30,19 @@
             document.getElementById("second").innerHTML="Its ohky";
             document.getElementById("test").innerHTML='<iframe src="https://giphy.com/embed/zalagqGezsVQx69l7R" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/love-heart-cartoon-zalagqGezsVQx69l7R">via GIPHY</a></p>';
         
+            function kgoedi(){
+                document.getElementById("test").style.width="100%";
+            document.getElementById("test").style.height="250%";
+            document.getElementById("test").style.backgroundColor="pink";
+            document.getElementById("test").style.position="fixed";
+            document.getElementById("second").innerHTML="will you be my valentine?";
+            document.getElementById("test").innerHTML='<iframe src="file:///C:/Users/FosterMELLIAR/Documents/giphy.webp"';
+            }
         }
 
+
     </script>
+
 </body>
 </html>
 
